@@ -10,28 +10,69 @@
 
 <div class="container">
 
-    <header class="text-center m-4">
+    <header class="text-center my-5">
         <h1 class="display-4 fw-bold">Autobazar</h1>
     </header>
 
 
     <main>
-        <section id="uvod" class="text-center m-5 p-3 bg-light rounded shadow">
+        <section id="uvod" class="text-center my-5 p-3 bg-light rounded shadow">
             <h2 class="fw-bold mb-3">Vítejte v našem autobazaru</h2>
-            <p class="lead">Nabízíme kvalitní auta za bezkonkurenční ceny. Každé vozidlo je prověřeno a připraveno k prodeji.</p>
+            <p>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseIntro" role="button">
+                    Rozklikni pro více info
+                </a>
+            </p>
+            <div class="collapse" id="collapseIntro">
+                <div class="card card-body mt-2">
+                    Nabízíme kvalitní auta za bezkonkurenční ceny. Každé vozidlo je prověřeno a připraveno k prodeji (no cap).
+                </div>
+            </div>
         </section>
 
-        <section id="nabidka" class="text-center m-5">
+        <section id="nabidka" class="text-center my-5">
             <h2 class="fw-bold mb-3">Naše nabídka</h2>
 
-            <ul class="list-group mb-4">
-                <li class="list-group-item">Škoda Octavia</li>
-                <li class="list-group-item">Volkswagen Golf</li>
-                <li class="list-group-item">BMW 320d</li>
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered text-center">
+                    <thead class="table-dark">
+                    <tr>
+                        <th>Model</th>
+                        <th>Rok</th>
+                        <th>Cena</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Škoda Octavia</td>
+                        <td>2015</td>
+                        <td>200 000 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>Volkswagen Golf</td>
+                        <td>2017</td>
+                        <td>250 000 Kč</td>
+                    </tr>
+                    <tr>
+                        <td>BMW 320d</td>
+                        <td>2019</td>
+                        <td>370 000 Kč</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="sluzby" class="text-center my-5">
+            <h2 class="fw-bold mb-3 text-center">Naše služby</h2>
+            <ul class="list-group bg-light rounded shadow">
+                <li class="list-group-item">Prodej vozidel</li>
+                <li class="list-group-item">Odkup vozidel</li>
+                <li class="list-group-item">Servis a údržba</li>
             </ul>
         </section>
 
-        <section id="kontakt" class="text-center m-5">
+        <section id="kontakt" class="text-center my-5">
             <h2 class="fw-bold mb-3">Kontakt</h2>
             <ul class="list-group">
                 <li class="list-group-item">Email: info@autobazarjecna.cz</li>
@@ -41,7 +82,7 @@
     </main>
 
 
-    <footer class="text-center py-4 bg-light shadow m-5 rounded">
+    <footer class="text-center py-4 bg-light shadow my-5 rounded">
         <p class="mb-0">2025 Autobazar Ječná</p>
     </footer>
 </div>
