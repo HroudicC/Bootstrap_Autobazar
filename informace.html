@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boostrap - Autobazar-Informace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">Informace o našich službách</h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-3">
+                <div id="list-example" class="list-group shadow">
+                    <a class="list-group-item list-group-item-action active" href="#section-1">O nás</a>
+                    <a class="list-group-item list-group-item-action" href="#section-2">Naše služby</a>
+                    <a class="list-group-item list-group-item-action" href="#section-3">Záruka a servis</a>
+                    <a class="list-group-item list-group-item-action" href="#section-4">Kontakt</a>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="scrollspy-example bg-light p-4 rounded shadow"
+                     data-bs-spy="scroll"
+                     data-bs-target="#list-example"
+                     data-bs-smooth-scroll="true"
+                     tabindex="0"
+                     style="height: 400px; overflow-y: auto;">
+
+                    <h4 id="section-1">O nás</h4>
+                    <p>
+                        Náš autobazar působí na trhu více než
+                        <span data-bs-toggle="tooltip" title="Založeni v roce 2014"><b>10 let</b></span>
+                        a zaměřuje se na kvalitní vozy s ověřeným původem.
+                    </p>
+
+                    <h4 id="section-2">Naše služby</h4>
+                    <p>
+                        Nabízíme <span data-bs-toggle="tooltip" title="Okamžitý výkup vašeho starého vozidla"><b>výkup vozidel</b></span>,
+                        testovací jízdy a možnost financování.
+                        Sed eu mi odio. Sed ornare, ligula id pellentesque accumsan, odio leo efficitur ligula,
+                        et dapibus mi libero in nibh. Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas. Etiam mattis congue purus nec lacinia.
+                    </p>
+
+                    <h4 id="section-3">Záruka a servis</h4>
+                    <p>
+                        Každé prodané vozidlo má minimálně
+                        <span data-bs-toggle="tooltip" title="Záruka se vztahuje jenom na motor!"><b>12 měsíců záruky</b></span>.
+                        Nabízíme také bezplatné kontroly.
+                        Phasellus auctor ligula in odio tristique facilisis. Vivamus dignissim vestibulum tristique. Quisque eget gravida leo.
+                        Cras sed ullamcorper libero, nec tincidunt ante. Donec lacus sapien, mollis nec imperdiet sed, fringilla quis risus.
+                        Fusce imperdiet nisi ut odio ultrices, id bibendum diam interdum. Vivamus euismod augue mi, in tristique nunc venenatis a.
+                        Integer nec diam id augue viverra ullamcorper nec in neque. Nullam sed gravida mauris, porta fermentum mauris. Proin convallis,
+                        velit nec congue semper, risus justo semper lectus, a finibus nisi metus non lectus. Phasellus convallis commodo faucibus.
+                        Aenean ut ex eget orci porttitor ultrices eget nec dui. Nulla dignissim lacus odio, eget bibendum justo sagittis id. Donec non
+                        dolor eros. Fusce eu sapien a mi congue commodo. Morbi pellentesque, massa in varius eleifend, ante tellus cursus lorem, vitae
+                        sagittis eros mi sit amet turpis. Ut ornare, leo blandit viverra semper, dui urna fermentum arcu, ac pretium nisi libero nec nunc.
+                    </p>
+
+                    <h4 id="section-4">Kontakt</h4>
+                    <p>
+                        Adresa: Ječná Praha<br>
+                        <span data-bs-toggle="tooltip" title="Zavolejte nám Po–Pá, 8:00–17:00">Telefon: +420 123 456 789</span><br>
+                        Email: info@autobazarjecna.cz
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+<!-- Pro tooltipy -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+        new bootstrap.Tooltip(el);
+    });
+</script>
+
+</body>
+</html>
